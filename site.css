@@ -1,17 +1,17 @@
 :root {
-  --bg: #f5f0e7;
-  --bg-deep: #ebe2d3;
-  --paper: rgba(255, 251, 244, 0.82);
-  --paper-strong: rgba(255, 251, 244, 0.94);
-  --ink: #172127;
-  --muted: #58656c;
+  --bg: #f2efe9;
+  --bg-deep: #e7e1d7;
+  --paper: rgba(255, 252, 247, 0.84);
+  --paper-strong: rgba(255, 252, 247, 0.94);
+  --ink: #1b2328;
+  --muted: #5f6a71;
   --line: rgba(23, 33, 39, 0.1);
   --line-strong: rgba(23, 33, 39, 0.16);
-  --accent: #1b7464;
-  --accent-deep: #0f5347;
-  --accent-soft: rgba(27, 116, 100, 0.1);
-  --warm: #b9783d;
-  --shadow: 0 24px 70px rgba(23, 33, 39, 0.08);
+  --accent: #275d66;
+  --accent-deep: #1d454b;
+  --accent-soft: rgba(39, 93, 102, 0.08);
+  --warm: #8e7558;
+  --shadow: 0 18px 48px rgba(23, 33, 39, 0.06);
 }
 
 * {
@@ -25,8 +25,8 @@ body {
   font-family: "Avenir Next", Avenir, "Helvetica Neue", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at top left, rgba(27, 116, 100, 0.15), transparent 32%),
-    radial-gradient(circle at top right, rgba(185, 120, 61, 0.12), transparent 24%),
+    radial-gradient(circle at top left, rgba(39, 93, 102, 0.1), transparent 30%),
+    radial-gradient(circle at top right, rgba(142, 117, 88, 0.08), transparent 22%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
 }
 
@@ -75,7 +75,7 @@ a:hover {
   justify-content: space-between;
   gap: 20px;
   padding: 16px 20px;
-  border-radius: 22px;
+  border-radius: 18px;
 }
 
 .brand {
@@ -96,10 +96,10 @@ a:hover {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
-  color: #f8f4ec;
-  font-size: 13px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #30474e 0%, #22353b 100%);
+  color: #f5f0e7;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
 }
@@ -126,11 +126,11 @@ a:hover {
 .section-block,
 .metrics-strip,
 .site-footer {
-  border-radius: 28px;
+  border-radius: 22px;
 }
 
 .hero {
-  padding: 34px;
+  padding: 32px;
 }
 
 .hero-home {
@@ -175,9 +175,9 @@ a:hover {
 
 .hero h1 {
   margin-top: 14px;
-  max-width: 720px;
-  font-size: clamp(44px, 7vw, 76px);
-  line-height: 0.98;
+  max-width: 760px;
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.02;
 }
 
 .hero-copy,
@@ -209,11 +209,11 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 46px;
+  min-height: 44px;
   padding: 0 18px;
   border-radius: 999px;
   border: 1px solid transparent;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -223,17 +223,17 @@ a:hover {
 }
 
 .button-primary {
-  background: var(--accent);
-  color: #f8f4ec;
+  background: #23353b;
+  color: #f7f3eb;
 }
 
 .button-primary:hover {
-  background: var(--accent-deep);
+  background: #1b2a2f;
 }
 
 .button-secondary {
-  border-color: rgba(27, 116, 100, 0.18);
-  background: var(--accent-soft);
+  border-color: rgba(23, 33, 39, 0.12);
+  background: rgba(255, 255, 255, 0.45);
   color: var(--ink);
 }
 
@@ -247,8 +247,8 @@ a:hover {
 .hero-tags span {
   padding: 10px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(27, 116, 100, 0.14);
-  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(23, 33, 39, 0.1);
+  background: rgba(255, 255, 255, 0.56);
   color: var(--ink);
   font-size: 13px;
 }
@@ -256,14 +256,12 @@ a:hover {
 .panel {
   min-height: 220px;
   padding: 28px 24px;
-  border-radius: 24px;
+  border-radius: 20px;
 }
 
 .panel-dark {
   border-color: rgba(23, 33, 39, 0.08);
-  background:
-    radial-gradient(circle at top left, rgba(27, 116, 100, 0.12), transparent 36%),
-    linear-gradient(180deg, rgba(240, 233, 220, 0.9) 0%, rgba(248, 244, 236, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(246, 240, 230, 0.92) 0%, rgba(252, 248, 241, 0.96) 100%);
 }
 
 .hero-side {
@@ -323,7 +321,7 @@ a:hover {
 }
 
 .section-block {
-  padding: 30px 28px;
+  padding: 28px 26px;
 }
 
 .section-block-alt {
@@ -336,8 +334,8 @@ a:hover {
 
 .section-intro h2 {
   margin-top: 12px;
-  font-size: clamp(30px, 4.5vw, 52px);
-  line-height: 1.02;
+  font-size: clamp(28px, 4.2vw, 44px);
+  line-height: 1.08;
 }
 
 .section-intro p {
@@ -355,15 +353,15 @@ a:hover {
 .use-case-card {
   padding: 24px;
   border: 1px solid var(--line);
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.38);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.48);
 }
 
 .feature-card h3,
 .use-case-card h3 {
   margin-top: 16px;
-  font-size: 28px;
-  line-height: 1.08;
+  font-size: 24px;
+  line-height: 1.12;
 }
 
 .feature-card p,
@@ -409,7 +407,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 24px 28px;
+  padding: 22px 24px;
 }
 
 .site-footer p {
@@ -469,18 +467,18 @@ a:hover {
 
   .site-header {
     padding: 14px 16px;
-    border-radius: 18px;
+    border-radius: 16px;
   }
 
   .hero,
   .section-block,
   .site-footer {
     padding: 22px 18px;
-    border-radius: 22px;
+    border-radius: 18px;
   }
 
   .metrics-strip {
-    border-radius: 22px;
+    border-radius: 18px;
   }
 
   .metrics-strip article,
@@ -493,17 +491,17 @@ a:hover {
   .panel,
   .feature-card,
   .use-case-card {
-    border-radius: 20px;
+    border-radius: 16px;
   }
 
   .hero h1 {
-    font-size: clamp(34px, 13vw, 54px);
+    font-size: clamp(34px, 12vw, 48px);
   }
 
   .section-intro h2,
   .feature-card h3,
   .use-case-card h3 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .hero-copy,
