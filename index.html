@@ -4,71 +4,171 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Your Safari</title>
-  <meta name="description" content="Your Safari is a technology company building digital products and AI-powered services for international visitors in China.">
+  <meta name="description" content="Your Safari builds practical AI travel assistance for international visitors in China.">
   <link rel="stylesheet" href="./site.css">
 </head>
 <body>
-  <main class="page-shell">
-    <section class="hero">
-      <div class="hero-mark">Your Safari</div>
-      <h1>AI services for international visitors to China.</h1>
-      <p class="hero-copy">
-        Your Safari is a product and technology brand focused on building practical digital tools, AI-powered assistance, and service access experiences for people traveling to or living in China.
-      </p>
-      <div class="hero-tags" aria-label="Core areas">
-        <span>Travel</span>
-        <span>Medical</span>
-        <span>Local Life</span>
-        <span>Assistance</span>
+  <main class="page-shell home-shell">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Your Safari home">
+        <span class="brand-mark">YS</span>
+        <span class="brand-text">Your Safari</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#product">Product</a>
+        <a href="#use-cases">Use Cases</a>
+        <a href="#company">Company</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero hero-home">
+      <div class="hero-copy-block">
+        <div class="hero-mark">AI Travel Assistance</div>
+        <h1>Practical support for international visitors navigating China.</h1>
+        <p class="hero-copy">
+          Your Safari designs AI-powered travel tools for real situations on the ground:
+          getting around, communicating with drivers and staff, handling urgent questions,
+          and finding clear next steps when generic chat is not enough.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="./contact.html">Get in touch</a>
+          <a class="button button-secondary" href="#product">See product focus</a>
+        </div>
+        <div class="hero-tags" aria-label="Core areas">
+          <span>Travel</span>
+          <span>Language</span>
+          <span>Urgent Support</span>
+          <span>Local Access</span>
+        </div>
+      </div>
+
+      <aside class="hero-side panel panel-dark" aria-label="At a glance">
+        <p class="eyebrow">At a glance</p>
+        <ul class="glance-list">
+          <li>English-first assistance for travelers in China</li>
+          <li>Short, readable Chinese output for offline moments</li>
+          <li>Designed around transport, safety, documents, and health needs</li>
+        </ul>
+        <div class="glance-grid">
+          <div>
+            <span class="glance-label">Mode</span>
+            <strong>Consumer AI</strong>
+          </div>
+          <div>
+            <span class="glance-label">Focus</span>
+            <strong>China travel</strong>
+          </div>
+          <div>
+            <span class="glance-label">Output</span>
+            <strong>Actionable help</strong>
+          </div>
+          <div>
+            <span class="glance-label">Format</span>
+            <strong>Fast and readable</strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="metrics-strip" aria-label="Key themes">
+      <article>
+        <span class="metric-kicker">Language</span>
+        <p>Natural English input with practical travel-oriented answers.</p>
+      </article>
+      <article>
+        <span class="metric-kicker">On-the-ground use</span>
+        <p>Built for taxis, reception desks, pharmacies, and transit friction.</p>
+      </article>
+      <article>
+        <span class="metric-kicker">Urgency</span>
+        <p>Quick access for document, safety, and health-related questions.</p>
+      </article>
+    </section>
+
+    <section class="section-block" id="product">
+      <div class="section-intro">
+        <p class="eyebrow">Product Focus</p>
+        <h2>Designed for real travel friction, not open-ended conversation.</h2>
+        <p>
+          The product direction centers on moments where visitors need clarity fast:
+          practical phrasing, local context, and useful outputs that can be acted on immediately.
+        </p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <p class="feature-index">01</p>
+          <h3>Works in English</h3>
+          <p>Users can ask naturally and receive concise help without learning local systems first.</p>
+        </article>
+        <article class="feature-card">
+          <p class="feature-index">02</p>
+          <h3>Built for travelers in China</h3>
+          <p>Product decisions are shaped by local, offline, and service-access moments where generic tools fail.</p>
+        </article>
+        <article class="feature-card">
+          <p class="feature-index">03</p>
+          <h3>Driver-ready Chinese phrases</h3>
+          <p>Outputs can be made short and readable enough to show directly when spoken communication is difficult.</p>
+        </article>
+        <article class="feature-card">
+          <p class="feature-index">04</p>
+          <h3>Fast help for urgent situations</h3>
+          <p>Health, document, and safety questions are treated as immediate usability problems, not long conversations.</p>
+        </article>
       </div>
     </section>
 
-    <section class="content-grid" aria-label="Overview">
+    <section class="section-block section-block-alt" id="use-cases">
+      <div class="section-intro">
+        <p class="eyebrow">Use Cases</p>
+        <h2>Structured around the moments that matter most during a trip.</h2>
+      </div>
+      <div class="use-case-grid">
+        <article class="use-case-card">
+          <h3>Transport and arrival</h3>
+          <p>Address confirmation, taxi phrases, station navigation, and quick explanations to drivers or hotel staff.</p>
+        </article>
+        <article class="use-case-card">
+          <h3>Medical and safety</h3>
+          <p>Immediate help with symptoms, pharmacy language, essential instructions, and next-step guidance.</p>
+        </article>
+        <article class="use-case-card">
+          <h3>Local access and services</h3>
+          <p>Support for practical tasks such as checking in, understanding instructions, and resolving service confusion.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-grid company-grid" id="company" aria-label="Company">
       <article class="panel panel-large">
         <p class="eyebrow">Company</p>
-        <h2>Built for clarity, speed, and practical support.</h2>
+        <h2>Building useful interfaces between international users and local systems.</h2>
         <p>
-          Your Safari develops software products intended to help users access local information, discover services, and navigate common real-world scenarios more efficiently.
+          Your Safari is a technology company focused on digital products and AI services
+          that improve access, clarity, and task completion for international users in China.
         </p>
       </article>
 
       <article class="panel">
         <p class="eyebrow">Contact</p>
-        <p>
-          General inquiries: <a href="mailto:info@your-safari.com">info@your-safari.com</a>
-        </p>
+        <p>General inquiries: <a href="mailto:info@your-safari.com">info@your-safari.com</a></p>
       </article>
 
       <article class="panel">
-        <p class="eyebrow">Status</p>
-        <p>
-          Corporate website for company and product presentation.
-        </p>
+        <p class="eyebrow">Pages</p>
+        <p><a href="./privacy.html">Privacy Policy</a></p>
+        <p><a href="./contact.html">Contact Information</a></p>
       </article>
     </section>
 
-    <section class="content-grid content-grid-secondary" aria-label="Policies">
-      <article class="panel">
-        <p class="eyebrow">Support</p>
-        <p>
-          For business, platform, or product-related questions, please contact our team through the email listed above.
-        </p>
-      </article>
-
-      <article class="panel">
-        <p class="eyebrow">Privacy</p>
-        <p>
-          <a href="./privacy.html">Privacy Policy</a>
-        </p>
-      </article>
-
-      <article class="panel">
-        <p class="eyebrow">Contact</p>
-        <p>
-          <a href="./contact.html">Contact Information</a>
-        </p>
-      </article>
-    </section>
+    <footer class="site-footer">
+      <div>
+        <p class="eyebrow">Your Safari</p>
+        <p class="footer-copy">Practical AI products for international visitors in China.</p>
+      </div>
+      <a class="button button-secondary" href="mailto:info@your-safari.com">info@your-safari.com</a>
+    </footer>
   </main>
 </body>
 </html>
