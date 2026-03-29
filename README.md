@@ -4,11 +4,9 @@ Public website for **Your Safari**—a technology company building practical, AI
 
 ## Live site
 
-After GitHub Pages is enabled for this repository, the site is served at:
+**https://your-safari.com/**
 
-**https://your-safari.github.io/your-safari/**
-
-Deploys automatically from `main` via [GitHub Actions](.github/workflows/pages.yml).
+The production site is deployed from `main` via [GitHub Actions](.github/workflows/pages.yml) (GitHub Pages); the `your-safari.com` domain points to that hosting.
 
 ## What’s in this repo
 
