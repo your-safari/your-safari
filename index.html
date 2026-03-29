@@ -1,174 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Safari</title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Your Safari | Navigate China with Confidence</title>
   <meta name="description" content="Your Safari is a technology company building AI-powered digital services for international users in China.">
-  <link rel="stylesheet" href="./site.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#e1e2e8",
+              "on-background": "#191c20",
+              "error-container": "#ffdad6",
+              "surface": "#f9f9ff",
+              "surface-container-high": "#e7e8ed",
+              "secondary-fixed-dim": "#b5c8e5",
+              "secondary": "#4e5f79",
+              "on-primary-fixed": "#001c38",
+              "on-tertiary": "#ffffff",
+              "on-primary": "#ffffff",
+              "tertiary": "#572500",
+              "on-tertiary-container": "#ffa46a",
+              "surface-container-lowest": "#ffffff",
+              "inverse-primary": "#a3c9ff",
+              "outline-variant": "#c2c6d1",
+              "on-surface-variant": "#424750",
+              "inverse-on-surface": "#f0f0f6",
+              "on-secondary-fixed": "#081c33",
+              "on-primary-container": "#8abcff",
+              "inverse-surface": "#2e3035",
+              "primary": "#003461",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "primary-fixed-dim": "#a3c9ff",
+              "on-secondary-container": "#52647d",
+              "surface-tint": "#27609d",
+              "on-secondary-fixed-variant": "#364860",
+              "primary-container": "#004b87",
+              "surface-dim": "#d9dadf",
+              "secondary-fixed": "#d3e4ff",
+              "on-tertiary-fixed-variant": "#753400",
+              "surface-container": "#ededf3",
+              "outline": "#727781",
+              "on-primary-fixed-variant": "#004882",
+              "surface-container-highest": "#e1e2e8",
+              "surface-container-low": "#f3f3f9",
+              "error": "#ba1a1a",
+              "secondary-container": "#cee1ff",
+              "tertiary-fixed-dim": "#ffb68b",
+              "on-tertiary-fixed": "#321300",
+              "primary-fixed": "#d3e4ff",
+              "surface-bright": "#f9f9ff",
+              "tertiary-fixed": "#ffdbc8",
+              "on-surface": "#191c20",
+              "on-error": "#ffffff",
+              "background": "#f9f9ff",
+              "tertiary-container": "#793701"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+  <style>
+      body { font-family: 'Manrope', sans-serif; }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .tonal-shift-bg { background-color: rgba(249, 249, 255, 0.8); }
+    </style>
 </head>
-<body>
-  <main class="page-shell home-shell">
-    <header class="site-header">
-      <a class="brand" href="./index.html" aria-label="Your Safari home">
-        <span class="brand-mark">YS</span>
-        <span class="brand-text">Your Safari</span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#solutions">Solutions</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#company">Company</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
-    </header>
-
-    <section class="hero hero-home">
-      <div class="hero-copy-block">
-        <div class="hero-mark">Your Safari</div>
-        <h1>AI-enabled digital services for international users in China.</h1>
-        <p class="hero-copy">
-          Your Safari is a technology company focused on practical service experiences for
-          travel, local access, and assistance scenarios. We design products that help
-          international users complete tasks more clearly and efficiently in real-world settings.
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-bold text-[#003461] dark:text-white tracking-tighter font-['Manrope']" href="./index.html">
+            Your Safari
+        </a>
+<a class="inline-flex bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold hover:bg-primary-container transition-all active:scale-95 duration-200" href="#cta">
+            Get the App
+        </a>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden px-8 lg:px-16">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Premium Travel Tech
+            </div>
+<h1 class="text-6xl lg:text-8xl font-extrabold text-primary leading-[1.1] tracking-tighter">
+                Navigate China <br/>with Confidence
+            </h1>
+<p class="text-xl lg:text-2xl text-secondary max-w-2xl font-medium leading-relaxed">
+                AI-powered local assistance designed for international travelers. Break the barrier of language and logistics instantly.
+            </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="inline-flex px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-xl font-bold text-lg hover:shadow-xl transition-all items-center justify-center" href="#cta">
+                    Join the Waitlist
+                </a>
+<a class="inline-flex px-8 py-4 bg-surface-container-highest text-on-surface rounded-xl font-bold text-lg hover:bg-surface-container-high transition-all items-center justify-center" href="#features">
+                    How it works
+                </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-primary-fixed/30 rounded-full blur-[120px]"></div>
+<img alt="App Preview" class="w-full max-w-[420px] mx-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3xayq8D1eFYxr7mUccbdrHcK-5K8Ox54okB95zYsWJne8RVAkrrKFYD0DbmJ5fG-YCMA_xHazIHoLvW9NroaJi6gXZ9IJlNguju4xj-Pyyg8wDgyAVblRSCZQ6uNbGRmLcDV1T0-TFDhh0EOUnOld7mOxwWMMaXdWdmDZuOp3fPE9b9VL-sUmq82JfsV4fn9CGNzaRgXNnIajqptTsH9dRLDJGRgmn-n1VfjpqgMXBxrx31vEtCYINKCC3LQNu_4LFx-yav3SITU"/>
+</div>
+</div>
+</section>
+<!-- Our Mission Section -->
+<section id="mission" class="py-32 bg-surface-container-low px-8 lg:px-16 scroll-mt-24">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-end">
+<div class="space-y-6">
+<div class="text-tertiary font-bold tracking-widest text-sm flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                    OUR MISSION
+                </div>
+<h2 class="text-4xl lg:text-5xl font-bold text-primary tracking-tight">Focusing on practical service experiences.</h2>
+</div>
+<div class="space-y-6">
+<p class="text-lg text-secondary leading-relaxed">
+                    We believe that travel should be about the journey, not the struggle. Our mission is to provide high-precision efficiency in real-world settings, ensuring every traveler feels like a local from the moment they land.
+                </p>
+<div class="h-1 w-24 bg-primary-fixed-dim"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- App Showcase Section -->
+<section id="features" class="py-32 bg-surface px-8 lg:px-16 overflow-hidden scroll-mt-24">
+<div class="max-w-7xl mx-auto space-y-24">
+<div class="text-center space-y-4">
+<h2 class="text-4xl lg:text-5xl font-extrabold text-primary tracking-tighter">Engineered for the Modern Explorer</h2>
+<p class="text-secondary text-lg max-w-2xl mx-auto">A seamless suite of tools designed to handle every complexity of your Chinese safari.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- AI Concierge -->
+<div class="group bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant/30 hover:border-primary/20 hover:shadow-sm transition-all duration-300">
+<div class="mb-10 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-surface-container">
+<span class="material-symbols-outlined text-3xl text-primary">psychology_alt</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4 tracking-tight">AI Concierge</h3>
+<p class="text-secondary leading-relaxed font-medium">Instant, context-aware answers to your most pressing travel questions, powered by local data.</p>
+<div class="mt-8 flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest group-hover:gap-3 transition-all cursor-pointer">
+                    Explore Feature <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Smart Transit -->
+<div class="group bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant/30 hover:border-primary/20 hover:shadow-sm transition-all duration-300">
+<div class="mb-10 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-surface-container text-primary">
+<span class="material-symbols-outlined text-3xl">map</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4 tracking-tight">Smart Transit</h3>
+<p class="text-secondary leading-relaxed font-medium">Navigate high-speed rail, subways, and ride-hailing with unified, English-first routing.</p>
+<div class="mt-8 flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest group-hover:gap-3 transition-all cursor-pointer">
+                    Explore Feature <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Local Services -->
+<div class="group bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant/30 hover:border-primary/20 hover:shadow-sm transition-all duration-300">
+<div class="mb-10 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-surface-container text-primary">
+<span class="material-symbols-outlined text-3xl">hub</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4 tracking-tight">Local Services</h3>
+<p class="text-secondary leading-relaxed font-medium">Access payments, bookings, and emergency support through a single, secure gateway.</p>
+<div class="mt-8 flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest group-hover:gap-3 transition-all cursor-pointer">
+                    Explore Feature <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Your Safari Section -->
+<section id="why" class="py-32 bg-surface-container-high/40 px-8 lg:px-16 scroll-mt-24">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+<div class="space-y-6">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<h4 class="text-2xl font-bold text-primary">Real-time Support</h4>
+<p class="text-secondary leading-relaxed">24/7 human-assisted support layers on top of our AI for complex situations that require a personal touch.</p>
+</div>
+<div class="space-y-6">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">key</span>
+</div>
+<h4 class="text-2xl font-bold text-primary">Seamless Access</h4>
+<p class="text-secondary leading-relaxed">One-tap authentication for public Wi-Fi, regional apps, and essential digital services across the country.</p>
+</div>
+<div class="space-y-6">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">bolt</span>
+</div>
+<h4 class="text-2xl font-bold text-primary">Task Efficiency</h4>
+<p class="text-secondary leading-relaxed">Optimized workflows reduce the time spent on logistics by up to 70%, letting you enjoy more of your trip.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Footer Section -->
+<section id="cta" class="py-32 px-8 lg:px-16 scroll-mt-24">
+<div class="max-w-7xl mx-auto bg-primary rounded-[2rem] p-12 lg:p-24 text-center text-on-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container rounded-full blur-[100px] -mr-48 -mt-48 opacity-50"></div>
+<div class="relative z-10 space-y-8">
+<h2 class="text-5xl lg:text-7xl font-extrabold tracking-tighter">Ready to start your safari?</h2>
+<p class="text-xl text-primary-fixed-dim max-w-xl mx-auto font-medium">Download the app today and experience China like never before.</p>
+<div class="max-w-md mx-auto space-y-4 pt-8">
+<iframe name="waitlist-form-target" id="waitlist-form-target" title="Waitlist submission" class="absolute w-0 h-0 border-0" tabindex="-1" aria-hidden="true"></iframe>
+<form id="waitlist-form" class="flex flex-col sm:flex-row gap-3 w-full" action="https://docs.google.com/forms/d/e/1FAIpQLSf--_7d3a1KiFIxCuz4HTmb1BgkVNuzR_rtXuDZdcWy6HwR2Q/formResponse" method="post" target="waitlist-form-target">
+<input class="flex-1 px-6 py-4 rounded-xl text-on-surface border-none focus:ring-2 focus:ring-primary-fixed-dim outline-none font-medium" placeholder="Enter your email address" required type="email" name="entry.200950430" autocomplete="email" inputmode="email"/>
+<button class="bg-white text-primary px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform whitespace-nowrap" type="submit">
+                        Join the Waitlist
+                    </button>
+</form>
+<p id="waitlist-hint" class="text-primary-fixed-dim text-sm font-medium">Be the first to know when we launch.</p>
+<p id="waitlist-success" class="hidden text-primary-fixed text-base font-semibold" role="status">Thanks — you’re on the list. We’ll be in touch.</p>
+</div>
+<script>
+(function () {
+  var form = document.getElementById('waitlist-form');
+  if (!form) return;
+  form.addEventListener('submit', function () {
+    var hint = document.getElementById('waitlist-hint');
+    var ok = document.getElementById('waitlist-success');
+    var btn = form.querySelector('button[type="submit"]');
+    if (hint) hint.classList.add('hidden');
+    if (ok) ok.classList.remove('hidden');
+    if (btn) btn.disabled = true;
+  });
+})();
+</script>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1C1B1F] dark:bg-black w-full pt-16 pb-8 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div>
+<a class="text-xl font-bold text-white mb-4 block font-['Manrope']" href="./index.html">Your Safari</a>
+<p class="text-slate-400 text-sm leading-relaxed max-w-xs">
+                Pioneering precision travel technology for the global explorer in China.
+            </p>
+</div>
+<div>
+<h5 class="text-white text-xs font-bold uppercase tracking-widest opacity-50 mb-6 font-['Manrope']">Product</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="#features">Features</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="./privacy.html">Security</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="./contact.html">Support</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white text-xs font-bold uppercase tracking-widest opacity-50 mb-6 font-['Manrope']">Company</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="#mission">Our Mission</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="./contact.html">Careers</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="./contact.html">Global Offices</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white text-xs font-bold uppercase tracking-widest opacity-50 mb-6 font-['Manrope']">Connect</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="./contact.html">Contact Us</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="#">LinkedIn</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="#">Twitter</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-400 text-sm font-['Manrope'] tracking-wide">
+            © 2026 Your Safari Technology Group. All rights reserved.
         </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="./contact.html">Contact us</a>
-          <a class="button button-secondary" href="#company">Company overview</a>
-        </div>
-        <div class="hero-tags" aria-label="Core areas">
-          <span>Digital Services</span>
-          <span>Travel Assistance</span>
-          <span>Service Access</span>
-          <span>Applied AI</span>
-        </div>
-      </div>
-
-      <aside class="hero-side panel panel-dark" aria-label="At a glance">
-        <p class="eyebrow">At a glance</p>
-        <ul class="glance-list">
-          <li>Company website for corporate and product presentation</li>
-          <li>Focused on international-user scenarios in China</li>
-          <li>Combines product design, applied AI, and service workflow thinking</li>
-        </ul>
-        <div class="glance-grid">
-          <div>
-            <span class="glance-label">Sector</span>
-            <strong>Travel technology</strong>
-          </div>
-          <div>
-            <span class="glance-label">Market</span>
-            <strong>China</strong>
-          </div>
-          <div>
-            <span class="glance-label">Approach</span>
-            <strong>AI-powered services</strong>
-          </div>
-          <div>
-            <span class="glance-label">Users</span>
-            <strong>International visitors</strong>
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <section class="metrics-strip" aria-label="Key themes">
-      <article>
-        <span class="metric-kicker">Positioning</span>
-        <p>Focused on practical digital products rather than broad conversational interfaces.</p>
-      </article>
-      <article>
-        <span class="metric-kicker">Scenarios</span>
-        <p>Travel, communication, local service access, and time-sensitive support moments.</p>
-      </article>
-      <article>
-        <span class="metric-kicker">Delivery</span>
-        <p>Designed around clarity, task completion, and usable outputs in real environments.</p>
-      </article>
-    </section>
-
-    <section class="section-block" id="solutions">
-      <div class="section-intro">
-        <p class="eyebrow">Solutions</p>
-        <h2>Structured around operational problems that international users encounter in China.</h2>
-        <p>
-          Our work emphasizes narrowly defined service problems where users need clear language,
-          local context, and a direct path to action.
-        </p>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <p class="feature-index">01</p>
-          <h3>Travel assistance</h3>
-          <p>Support for common visitor tasks such as navigation, transport coordination, and trip-related guidance.</p>
-        </article>
-        <article class="feature-card">
-          <p class="feature-index">02</p>
-          <h3>Language mediation</h3>
-          <p>Readable outputs and concise phrasing designed to reduce friction between international users and local services.</p>
-        </article>
-        <article class="feature-card">
-          <p class="feature-index">03</p>
-          <h3>Local service access</h3>
-          <p>Interfaces intended to help users understand instructions, complete tasks, and move through unfamiliar processes.</p>
-        </article>
-        <article class="feature-card">
-          <p class="feature-index">04</p>
-          <h3>Urgent support flows</h3>
-          <p>Applied AI support for higher-friction situations involving documents, safety, and health-related questions.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block section-block-alt" id="capabilities">
-      <div class="section-intro">
-        <p class="eyebrow">Capabilities</p>
-        <h2>Built with a product mindset: clear scope, usable outputs, and local-context design.</h2>
-      </div>
-      <div class="use-case-grid">
-        <article class="use-case-card">
-          <h3>Applied AI interfaces</h3>
-          <p>Use of AI in focused workflows where response quality is measured by task usefulness, not length.</p>
-        </article>
-        <article class="use-case-card">
-          <h3>Scenario-led product design</h3>
-          <p>Product decisions shaped by specific user environments, especially offline and service-counter moments.</p>
-        </article>
-        <article class="use-case-card">
-          <h3>Service-oriented delivery</h3>
-          <p>Attention to clarity, user trust, and practical completion across digital touchpoints and support flows.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="content-grid company-grid" id="company" aria-label="Company">
-      <article class="panel panel-large">
-        <p class="eyebrow">Company</p>
-        <h2>Building practical interfaces between international users and local systems.</h2>
-        <p>
-          Your Safari develops digital products and AI-enabled services intended to improve
-          access, understanding, and task completion for international users operating in China.
-        </p>
-      </article>
-
-      <article class="panel">
-        <p class="eyebrow">Contact</p>
-        <p>General inquiries: <a href="mailto:info@your-safari.com">info@your-safari.com</a></p>
-      </article>
-
-      <article class="panel">
-        <p class="eyebrow">Pages</p>
-        <p><a href="./privacy.html">Privacy Policy</a></p>
-        <p><a href="./contact.html">Contact Information</a></p>
-      </article>
-    </section>
-
-    <footer class="site-footer">
-      <div>
-        <p class="eyebrow">Your Safari</p>
-        <p class="footer-copy">Technology company focused on digital services for international users in China.</p>
-      </div>
-      <a class="button button-secondary" href="mailto:info@your-safari.com">info@your-safari.com</a>
-    </footer>
-  </main>
+<div class="flex flex-wrap gap-8 justify-center">
+<a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="./privacy.html">Privacy Policy</a>
+<a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="./terms.html">Terms of Service</a>
+<a class="text-slate-400 hover:text-white transition-colors text-sm font-['Manrope'] tracking-wide" href="./privacy.html">Cookie Settings</a>
+</div>
+</div>
+</footer>
 </body>
 </html>
