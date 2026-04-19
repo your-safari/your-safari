@@ -1,6 +1,6 @@
-# Your Safari
+# ChinaNavix
 
-Public website for **Your Safari**—a technology company building practical, AI-assisted digital services for international travelers in China (including the GoChina app direction reflected in legal pages).
+Public website for **ChinaNavix**—a technology company building practical, AI-assisted digital services for international travelers in China (including the ChinaNavix app direction reflected in legal pages).
 
 ## Live site
 
@@ -12,7 +12,7 @@ The production site is deployed from `main` via [GitHub Actions](.github/workflo
 
 | Path | Purpose |
 |------|---------|
-| `index.html` | Landing page (Tailwind via CDN, waitlist form posts to Google Forms) |
+| `index.html` | Landing page (Tailwind via CDN, App Store download CTA) |
 | `contact.html`, `privacy.html`, `terms.html` | Company contact and policies (`site.css`) |
 | `site.css` | Shared styles for secondary pages |
 | `.nojekyll` | Lets Pages serve static files as-is |
@@ -33,4 +33,4 @@ General inquiries: [info.1@your-safari.com](mailto:info.1@your-safari.com)
 
 ## License
 
-Site content © Your Safari Technology Group unless otherwise noted.
+Site content © ChinaNavix Technology Group unless otherwise noted.
